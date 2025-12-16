@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Γεωμετρία – Τρίγωνο | EduWebAI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+  <!-- κοινά -->
+  <div id="site-header"></div>
+  <div id="site-nav"></div>
+
+  <main>
+
+    <!-- =========================
+         ΚΑΜΒΑΣ ΕΦΑΡΜΟΓΗΣ
+    ========================= -->
+    <section class="app-card"
+      data-tags="μαθηματικά,γεωμετρία,stem">
+
+      <h2>Διερεύνηση Τριγώνου</h2>
+
+      <!-- Μεταδεδομένα -->
+      <div class="app-meta">
+        <span class="subject">Μαθηματικά – Γεωμετρία</span>
+
+        <div class="tags">
+          <span class="tag">μαθηματικά</span>
+          <span class="tag">γεωμετρία</span>
+          <span class="tag">stem</span>
+        </div>
+      </div>
+
+      <p>
+        Διαδραστική εφαρμογή για τη διερεύνηση των ιδιοτήτων
+        τριγώνων μέσω μεταβολής των κορυφών.
+      </p>
+
+      <!-- Κοινά στοιχεία 
+      <div data-include="../../partials/app-common.html"></div>
+      -->
+      <!-- =========================
+           CANVAS
+      ========================= -->
+      <canvas id="triangleCanvas" width="500" height="400"
+              style="border:1px solid #ccc; margin-top:1rem;">
+      </canvas>
+
+      <!-- =========================
+           ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ
+      ========================= -->
+      <h3>Διδακτική αξιοποίηση</h3>
+      <ul>
+        <li>Διερεύνηση εμβαδού και περιμέτρου</li>
+        <li>Μεταβολή κορυφών – παρατήρηση αλλαγών</li>
+        <li>Διατύπωση υποθέσεων από τον μαθητή</li>
+      </ul>
+
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- JS -->
+  <script src="../../js/include.js"></script>
+  <script src="geometry-triangle.js"></script>
+
+</body>
+</html>

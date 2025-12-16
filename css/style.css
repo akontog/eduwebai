@@ -233,3 +233,40 @@ footer p {
 .accordion-content ul {
   margin-left: 1rem;
 }
+
+.app-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.subject {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.tag {
+  background: #e5e7eb;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.tag-filter {
+  margin-bottom: 2rem;
+}
