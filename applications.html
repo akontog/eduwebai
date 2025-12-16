@@ -23,34 +23,60 @@
       </p>
     </section>
 
+      <!-- =========================
+         TAG FILTERS
+    ========================= -->
+    <section class="tag-filter-section">
+      <h3>Φιλτράρισμα ανά κατηγορία</h3>
+      <div id="tagFilters" class="tag-filters">
+        <button class="filter-tag active" data-filter="all">
+          Όλες οι εφαρμογές <span class="count"></span>
+        </button>
+      </div>
+    </section>
+
+    
     <!-- =========================
          ΜΑΘΗΜΑΤΙΚΑ
     ========================= -->
-    <section class="accordion">
+    <section class="accordion" data-tags="μαθηματικά,stem">
       <button class="accordion-header">
-        ▶ <span class="icon">&#x1F4D0</span>Μαθηματικά
+        ▶ <span class="icon">📐</span>Μαθηματικά
       </button>
 
       <div class="accordion-content">
-        <ul>
-          <li>Αριθμομηχανή μαθηματικών εκφράσεων</li>
-          <li>Δυναμικά γραφήματα συναρτήσεων</li>
-          <li class="app-item">
+        <ul class="app-list">
+          <li class="app-item" data-tags="μαθηματικά,άλγεβρα">
             <div class="app-info">
-              <span class="app-title">
-                Διερεύνηση Τριγώνου
-              </span>
-              <span class="app-desc">
-                Δυναμική γεωμετρική διερεύνηση με μετακίνηση κορυφών
-              </span>
+              <span class="app-title">Αριθμομηχανή μαθηματικών εκφράσεων</span>
+              <span class="app-desc">Υπολογισμός πολύπλοκων αλγεβρικών εκφράσεων</span>
             </div>
-
-            <a href="apps/math/geometry-triangle.html"
-               class="app-button">
-               Άνοιγμα
-            </a>
+            <a href="#" class="app-button">Άνοιγμα</a>
           </li>
-          <li>Προσομοίωση πιθανοτήτων</li>
+
+          <li class="app-item" data-tags="μαθηματικά,συναρτήσεις,οπτικοποίηση">
+            <div class="app-info">
+              <span class="app-title">Δυναμικά γραφήματα συναρτήσεων</span>
+              <span class="app-desc">Διαδραστική οπτικοποίηση μαθηματικών συναρτήσεων</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="μαθηματικά,γεωμετρία,stem">
+            <div class="app-info">
+              <span class="app-title">Διερεύνηση Τριγώνου</span>
+              <span class="app-desc">Δυναμική γεωμετρική διερεύνηση με μετακίνηση κορυφών</span>
+            </div>
+            <a href="apps/math/geometry-triangle.html" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="μαθηματικά,πιθανότητες,προσομοίωση">
+            <div class="app-info">
+              <span class="app-title">Προσομοίωση πιθανοτήτων</span>
+              <span class="app-desc">Monte Carlo simulations και στατιστικές δοκιμές</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -58,17 +84,44 @@
     <!-- =========================
          ΦΥΣΙΚΗ
     ========================= -->
-    <section class="accordion">
+    <section class="accordion" data-tags="φυσική,stem">
       <button class="accordion-header">
-        ▶ <span class="icon">&#x269B</span> Φυσική
+        ▶ <span class="icon">⚛</span> Φυσική
       </button>
 
       <div class="accordion-content">
-        <ul>
-          <li>Ψηφιακό και αναλογικό ρολόι</li>
-          <li>Διαδραστικό ημερολόγιο παρατηρήσεων</li>
-          <li>Προσομοίωση κίνησης βλήματος</li>
-          <li>Κυματικά φαινόμενα</li>
+        <ul class="app-list">
+          <li class="app-item" data-tags="φυσική,χρόνος">
+            <div class="app-info">
+              <span class="app-title">Ψηφιακό και αναλογικό ρολόι</span>
+              <span class="app-desc">Κατανόηση μέτρησης χρόνου</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="φυσική,παρατήρηση">
+            <div class="app-info">
+              <span class="app-title">Διαδραστικό ημερολόγιο παρατηρήσεων</span>
+              <span class="app-desc">Καταγραφή επιστημονικών παρατηρήσεων</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="φυσική,κίνηση,προσομοίωση">
+            <div class="app-info">
+              <span class="app-title">Προσομοίωση κίνησης βλήματος</span>
+              <span class="app-desc">Παραβολική τροχιά και επίδραση βαρύτητας</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="φυσική,κύματα,οπτικοποίηση">
+            <div class="app-info">
+              <span class="app-title">Κυματικά φαινόμενα</span>
+              <span class="app-desc">Συμβολή, περίθλαση και στάσιμα κύματα</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -76,16 +129,36 @@
     <!-- =========================
          ΧΗΜΕΙΑ
     ========================= -->
-    <section class="accordion">
+    <section class="accordion" data-tags="χημεία,stem">
       <button class="accordion-header">
-        ▶ <span class="icon">&#x1F9EA</span> Χημεία
+        ▶ <span class="icon">🧪</span> Χημεία
       </button>
 
       <div class="accordion-content">
-        <ul>
-          <li>Διαδραστικός περιοδικός πίνακας</li>
-          <li>Σχηματισμός μορίων (drag & drop)</li>
-          <li>Προσομοιωτής χημικών αντιδράσεων</li>
+        <ul class="app-list">
+          <li class="app-item" data-tags="χημεία,στοιχεία">
+            <div class="app-info">
+              <span class="app-title">Διαδραστικός περιοδικός πίνακας</span>
+              <span class="app-desc">Εξερεύνηση χημικών στοιχείων και ιδιοτήτων</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="χημεία,μόρια">
+            <div class="app-info">
+              <span class="app-title">Σχηματισμός μορίων (drag & drop)</span>
+              <span class="app-desc">Χτίσιμο μορίων με drag and drop</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="χημεία,αντιδράσεις,προσομοίωση">
+            <div class="app-info">
+              <span class="app-title">Προσομοιωτής χημικών αντιδράσεων</span>
+              <span class="app-desc">Ισορροπία και κινητική χημικών αντιδράσεων</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -93,16 +166,36 @@
     <!-- =========================
          ΒΙΟΛΟΓΙΑ
     ========================= -->
-    <section class="accordion">
+    <section class="accordion" data-tags="βιολογία,stem">
       <button class="accordion-header">
-        ▶ <span class="icon">&#x1F9EC</span> Βιολογία
+        ▶ <span class="icon">🧬</span> Βιολογία
       </button>
 
       <div class="accordion-content">
-        <ul>
-          <li>Punnett Square – Κληρονομικότητα</li>
-          <li>Προσομοίωση φυσικής επιλογής</li>
-          <li>Οικοσυστήματα και τροφικές αλυσίδες</li>
+        <ul class="app-list">
+          <li class="app-item" data-tags="βιολογία,γενετική">
+            <div class="app-info">
+              <span class="app-title">Punnett Square – Κληρονομικότητα</span>
+              <span class="app-desc">Προβλέψεις γονότυπων και φαινότυπων</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="βιολογία,εξέλιξη,προσομοίωση">
+            <div class="app-info">
+              <span class="app-title">Προσομοίωση φυσικής επιλογής</span>
+              <span class="app-desc">Επιβίωση, προσαρμογή και γενετική ποικιλότητα</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="βιολογία,οικολογία">
+            <div class="app-info">
+              <span class="app-title">Οικοσυστήματα και τροφικές αλυσίδες</span>
+              <span class="app-desc">Ροή ενέργειας και διατροφικά δίκτυα</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -110,16 +203,36 @@
     <!-- =========================
          ΠΛΗΡΟΦΟΡΙΚΗ
     ========================= -->
-    <section class="accordion">
+    <section class="accordion" data-tags="πληροφορική">
       <button class="accordion-header">
-        ▶ <span class="icon">&#x1F4BB</span> Πληροφορική
+        ▶ <span class="icon">💻</span> Πληροφορική
       </button>
 
       <div class="accordion-content">
-        <ul>
-          <li>Οπτικοποίηση αλγορίθμων ταξινόμησης</li>
-          <li>Δομές δεδομένων (στοίβα, ουρά)</li>
-          <li>Εκπαιδευτικά παιχνίδια debugging</li>
+        <ul class="app-list">
+          <li class="app-item" data-tags="πληροφορική,αλγόριθμοι,οπτικοποίηση">
+            <div class="app-info">
+              <span class="app-title">Οπτικοποίηση αλγορίθμων ταξινόμησης</span>
+              <span class="app-desc">Bubble sort, Quick sort, Merge sort σε δράση</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="πληροφορική,δομές-δεδομένων">
+            <div class="app-info">
+              <span class="app-title">Δομές δεδομένων (στοίβα, ουρά)</span>
+              <span class="app-desc">Διαδραστική εξερεύνηση stack και queue</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="πληροφορική,προγραμματισμός">
+            <div class="app-info">
+              <span class="app-title">Εκπαιδευτικά παιχνίδια debugging</span>
+              <span class="app-desc">Εντοπισμός και διόρθωση σφαλμάτων κώδικα</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -127,16 +240,36 @@
     <!-- =========================
          ΜΟΥΣΙΚΗ
     ========================= -->
-    <section class="accordion">
+    <section class="accordion" data-tags="μουσική,τέχνη">
       <button class="accordion-header">
-        ▶ <span class="icon">&#x1F3B5</span> Μουσική
+        ▶ <span class="icon">🎵</span> Μουσική
       </button>
 
       <div class="accordion-content">
-        <ul>
-          <li>Διαδραστικό πιάνο</li>
-          <li>Καταγραφή και αναπαραγωγή μελωδιών</li>
-          <li>Ανάλυση φάσματος ήχου (Fourier)</li>
+        <ul class="app-list">
+          <li class="app-item" data-tags="μουσική">
+            <div class="app-info">
+              <span class="app-title">Διαδραστικό πιάνο</span>
+              <span class="app-desc">Εικονικό πληκτρολόγιο με MIDI support</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="μουσική,σύνθεση">
+            <div class="app-info">
+              <span class="app-title">Καταγραφή και αναπαραγωγή μελωδιών</span>
+              <span class="app-desc">Sequencer για δημιουργία μουσικής</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="μουσική,ήχος,οπτικοποίηση">
+            <div class="app-info">
+              <span class="app-title">Ανάλυση φάσματος ήχου (Fourier)</span>
+              <span class="app-desc">Μετασχηματισμός Fourier σε πραγματικό χρόνο</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -144,16 +277,36 @@
     <!-- =========================
          ΚΑΛΛΙΤΕΧΝΙΚΑ
     ========================= -->
-    <section class="accordion">
+    <section class="accordion" data-tags="καλλιτεχνικά,τέχνη">
       <button class="accordion-header">
-        ▶ <span class="icon">&#x1F3A8</span> Καλλιτεχνικά
+        ▶ <span class="icon">🎨</span> Καλλιτεχνικά
       </button>
 
       <div class="accordion-content">
-        <ul>
-          <li>Επιλογέας χρώματος</li>
-          <li>Γενετική τέχνη (Generative Art)</li>
-          <li>Συμμετρία και μοτίβα</li>
+        <ul class="app-list">
+          <li class="app-item" data-tags="καλλιτεχνικά,χρώμα">
+            <div class="app-info">
+              <span class="app-title">Επιλογέας χρώματος</span>
+              <span class="app-desc">RGB, HSL και αρμονίες χρωμάτων</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="καλλιτεχνικά,γενεσιουργική-τέχνη">
+            <div class="app-info">
+              <span class="app-title">Γενετική τέχνη (Generative Art)</span>
+              <span class="app-desc">Αλγοριθμική δημιουργία καλλιτεχνικών μοτίβων</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
+
+          <li class="app-item" data-tags="καλλιτεχνικά,γεωμετρία">
+            <div class="app-info">
+              <span class="app-title">Συμμετρία και μοτίβα</span>
+              <span class="app-desc">Εξερεύνηση συμμετριών και tessellations</span>
+            </div>
+            <a href="#" class="app-button">Άνοιγμα</a>
+          </li>
         </ul>
       </div>
     </section>
