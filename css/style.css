@@ -270,3 +270,49 @@ footer p {
 .tag-filter {
   margin-bottom: 2rem;
 }
+
+.app-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  font-weight: 500;
+}
+
+.app-desc {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* κουμπί */
+.app-button {
+  background: #2563eb;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.app-button:hover {
+  background: #1d4ed8;
+}
