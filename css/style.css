@@ -316,3 +316,11 @@ footer p {
 .app-button:hover {
   background: #1d4ed8;
 }
+
+.accordion-header {
+  font-size: 1.1rem;
+}
+
+.accordion-header span.icon {
+  margin-right: 0.5rem;
+}
